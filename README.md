@@ -1,4 +1,4 @@
-# Mini ChatGPT Ultra (Electron)
+# Mini ChatGPT with PoW (Electron)
 
 A tiny **Electron wrapper** for ChatGPT — focused, minimal, distraction-free.  
 
