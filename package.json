@@ -1,0 +1,28 @@
+{
+  "name": "mini-chatgpt",
+  "version": "0.1.0",
+  "description": "A minimal Electron for ChatGPT with proxy, DevTools toggle, and PoW in title",
+  "author": "Sesame.Lu",
+  "private": true,
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder",
+    "build:win": "electron-builder --win portable",
+    "build:win:both": "electron-builder --win nsis portable"
+  },
+  "devDependencies": {
+    "electron": "^38",
+    "electron-builder": "^24"
+  },
+  "build": {
+    "appId": "com.example.minichatgpt",
+    "productName": "Mini ChatGPT",
+    "icon": "build/icon.ico",
+    "files": ["main.js", "preload.js", "package.json"],
+    "asar": true,
+    "directories": {"output": "dist"},
+    "artifactName": "${productName}.${ext}",
+    "win": { "target": ["portable"] }
+  }
+}
